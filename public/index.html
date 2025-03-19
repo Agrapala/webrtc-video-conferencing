@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Video Conferencing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>WebRTC Video Conferencing</h1>
+    <div class="video-container">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+    <div class="controls">
+        <button id="muteButton">Mute</button>
+        <button id="cameraButton">Turn Off Camera</button>
+    </div>
+    <div class="chat">
+        <ul id="messages"></ul>
+        <input id="messageInput" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
